@@ -1,0 +1,18 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: bncg0dn4a-python
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: bncg0dn4a-python 
+  name: bncg0dn4a-python
+spec:
+  port:
+    targetPort: 8081 
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: bncg0dn4a-python
+    weight: 100 

@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: bncg0dn4a-python-gitops-repository
+spec:
+  url: https://github.com/tnevrlka-rhtap/bncg0dn4a-python-gitops
